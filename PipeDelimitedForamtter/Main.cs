@@ -11,11 +11,6 @@ namespace Kbg.NppPluginNET
         internal const string PluginName = "PipeDelimitedFormatter";
         static string iniFilePath = null;
         static bool someSetting = false;
-        static frmMyDlg frmMyDlg = null;
-        static int idMyDlg = -1;
-        static Bitmap tbBmp = Properties.Resources.star;
-        static Bitmap tbBmp_tbTab = Properties.Resources.star_bmp;
-        static Icon tbIcon = null;
         static IScintillaGateway editor = new ScintillaGateway(PluginBase.GetCurrentScintilla());
 
         public static void OnNotification(ScNotification notification)
@@ -39,7 +34,7 @@ namespace Kbg.NppPluginNET
             iniFilePath = Path.Combine(iniFilePath, PluginName + ".ini");
             someSetting = (Win32.GetPrivateProfileInt("SomeSection", "SomeKey", 0, iniFilePath) != 0);
 
-            PluginBase.SetCommand(0, "FormatText", FormatText, new ShortcutKey(true, true, false, Keys.P));
+            PluginBase.SetCommand(0, "Format Text", FormatText, new ShortcutKey(true, true, false, Keys.P));
         }
 
         internal static void PluginCleanUp()

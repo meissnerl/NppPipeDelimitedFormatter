@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{6a645fd1-5c86-4392-8a43-f0707757b773}</ProjectGuid>
+    <ProjectGuid>{6A645FD1-5C86-4392-8A43-F0707757B773}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PipeDelimitedForamtter</RootNamespace>
-    <AssemblyName>PipeDelimitedForamtter</AssemblyName>
+    <RootNamespace>NppPipeDelimitedFormatter</RootNamespace>
+    <AssemblyName>NppPipeDelimitedFormatter</AssemblyName>
     <OutputPath>bin\Debug\</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
